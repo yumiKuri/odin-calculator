@@ -48,20 +48,44 @@ body{
 .buttons{
     height: 52px;
     border-radius: 12px;
-    border: 1px solid rgba(255,255,255,0.08);
-    background: rgba(255,255,255,0.06);
-    color: #e5e7eb;
     font-size: 1.1rem;
     font-weight: 600;
     cursor: pointer;
+    transition: 0.25s ease;
 }
 
-#equal{
-    background-color: #3b82f6;
-    color: #ffffff;
+.number{
+    background-color: #1f2937;
+    color: #e5e7eb;
+    border: 1px solid #111827;
+}
+
+.number:hover{
+    background-color: #334155;
+    color: #f9fafb;
+    border: 1px solid #1e293b;
+}
+
+.operation{
+    background-color: #374151;
+    color: #e5e7eb;
+    border: 1px solid #1f2937;
+}
+
+.operation:hover{
+    background-color: #4b5563;
+    color: #f9fafb;
+    border: 1px solid #334155;
 }
 
 #ac{
     background-color: #ef4444;
     color: #ffffff;
+    border: 1px solid #b91c1c;
+}
+
+#ac:hover{
+    background-color: #dc2626;
+    color: #ffffff;
+    border: 1px solid #991b1b;
 }
