@@ -27,7 +27,8 @@ btnContainer.addEventListener("click", (e) => {
                 else return;
             }
             else{
-                if(firstValue === "") return;
+                if(firstValue === "" && content === "-") firstValue += content;
+                else if(firstValue === "") return;
                 else if(secondValue !== "" && firstValue !== "" && operation !== ""){
                     operate();
                     computed = true;
