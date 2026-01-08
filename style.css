@@ -21,7 +21,7 @@ body{
     border-radius: 16px;
 }
 
-.display{
+#display{
     height: 56px;
     padding: 12px 14px;
     border-radius: 12px;
@@ -38,7 +38,7 @@ body{
     white-space: nowrap;
 }
 
-.button-container{
+#button-container{
     margin-top: 12px;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
