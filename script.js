@@ -10,12 +10,19 @@ btnContainer.addEventListener("click", (e) => {
         if(content === "AC") reset();
 
         else if(e.target.classList.contains("number")){
-            if(operation === "" && computed){
+
+            if(operation === "" && computed && content !== "."){
                 reset();
                 firstValue = content;
             }
-            else if(operation === "") firstValue += content;
-            else secondValue += content;
+            else if(operation === ""){
+                if(content === "." && (firstValue === "" || firstValue.includes("."))) return;
+                firstValue += content;
+            }
+            else{
+                if(content === "." && (firstValue === "" || secondValue.includes("."))) return;
+                secondValue += content;
+            }
         }
 
         else if(e.target.classList.contains("operation")){
